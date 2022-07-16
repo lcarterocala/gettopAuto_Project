@@ -27,6 +27,10 @@ def search_gettop(context, search_word):
     context.app.get_topheader.search_gettop(search_word)
 
 
+@when('{search_word} is selected from menu bar')
+def header_menu_select(context, search_word):
+    context.app.get_topheader.header_menu_select(search_word)
+
 # @when('Search for {search_word}')
 # def search_gettop(context, search_word):
     # context.driver.find_element(*SEARCH_INPUT).send_keys(search_word)
