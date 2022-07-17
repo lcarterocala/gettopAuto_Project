@@ -3,6 +3,7 @@ from pages.get_topheader import Header
 from pages.get_topsearch_results_page import SearchResultsPage
 from pages.get_topfooter import Footer
 from pages.get_top_pricefilterpage import PriceFilterPage
+from pages.get_top_cartpage import CartPage
 
 
 class Application:
@@ -15,4 +16,6 @@ class Application:
         self.get_topsearch_results_page = SearchResultsPage(self.driver)
         self.get_topfooter = Footer(self.driver)
         self.get_top_pricefilterpage = PriceFilterPage(self.driver)
+        self.get_top_cartpage = CartPage(self.driver)
+
 
